@@ -1,7 +1,7 @@
 # Elasticsearch-Crud
 Bu Uygulamayı Elasticsearch'yi anlamak ve test etmek için cmd gibi komut bazlı bir yapıyla yazdım. Örneğin help komutu ile komutlar listelenebilir.\
 Elasticsearch servisini çalıştırmak için uygulama konumundaki konsol penceresine 'docker-compose up -d --scale elasticsearch=2' yazılabilir.\
-Buradaki scale komutu elasticsearch servisini 2 container ile çalıştırır*. Böylece Pool bağlantı türlerini test ederken daha rahat anlaşılabilir.
+Buradaki scale komutu elasticsearch servisini 2 container ile çalıştırır. Böylece Pool bağlantı türlerini test ederken daha rahat anlaşılabilir.
 
 </br>
 
@@ -59,7 +59,7 @@ SEARCH [(INDEX)] [(QUERY)] [(FIELD)] [(QUERYSTRING)]: Elasticsearch servisi ile 
         -MATCH: Alan adına göre tam bir kelime araması yapar.
         -TERM:
         -WILDCARD: Belirtilen özel karakterlere göre arama yapar.
-        -PREFIX: Kelimenin başı*
+        -PREFIX: Kelimenin başından arama yapar.
         -FUZZY:
         -RANGE:
         -QUERYSTRING:
