@@ -1,0 +1,26 @@
+version: '3.2'
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
+    volumes:
+      - type: volume
+        source: elasticsearch
+        target: /usr/share/elasticsearch/data
+    ports:
+      - "9200-9201:9200"
+    environment:
+      node.max_local_storage_nodes: 2
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      discovery.type: single-node
+      http.publish_host: localhost
+    networks:
+      - elk
+      
+      
+networks:
+  elk:
+    driver: bridge
+
+volumes:
+  elasticsearch:
