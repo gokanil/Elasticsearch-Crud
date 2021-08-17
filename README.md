@@ -31,7 +31,7 @@ CONNECTPOOL [(inmemory)TRUE/FALSE] [(POOL)] [(URL)] : Elasticsearch servisine po
              -[(CLOUDID)] => 
              -[(USERNAME)] =>
              -[(PASSWORD)] =>
-        -StaticConnectionPool:
+        -StaticConnectionPool: Çoklu servis adresi ile bağlantı kurar. İlk bağlantıda en az 1 başarılı bağlantı kurmalı. Her 'GET', 'ADD' ve 'SEARCH' işlemi yapıldığında bir sonraki bağlantıya geçer(bağlantı başarısız ise sonrakine geçmeye devam eder).
         -SniffingConnectionPool:
         -StickyConnectionPool:
 GET [(TERM)] [(INDEX)]: Elasticsearch servisi ile başarılı bir bağlantı kurulduktan sonra getirme işlemi yapar.
