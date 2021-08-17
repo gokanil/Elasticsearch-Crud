@@ -3,6 +3,13 @@ Bu Uygulamayı Elasticsearch'yi anlamak ve test etmek için cmd gibi komut bazl�
 Elasticsearch servisini çalıştırmak için uygulama konumundaki konsol penceresine 'docker-compose up -d --scale elasticsearch=2' yazılabilir.\
 Buradaki scale komutu elasticsearch servisini 2 container ile çalıştırır*. Böylece Pool bağlantı türlerini test ederken daha rahat anlaşılabilir.
 
+</br>
+
+Uygulama Örnek Resim(altını çizdiklerim komutlardır):
+![Alt text](/../main/Images/searchLine.png)
+
+</br>
+
 Uygulama İçin Örnek Komutlar:
 <pre>
 connect true                                                Elasticsearch servisine InMemoryConnection kullanarak bir bağlantı kurar.
